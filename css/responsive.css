@@ -1,0 +1,1216 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   Responsive layout for PC, tablet and mobile
+   Use after style.css
+   ========================================================= */
+
+/* -------------------- RESET RESPONSIVE -------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =========================================================
+   TABLET: 769px - 1024px
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .topbar-container,
+    .header-container,
+    .hero-container,
+    .dream-living-container,
+    .about-container,
+    .Commercial-Real-estate .container,
+    .featured-section .container,
+    .projects-section,
+    .blog-section,
+    .contact-section .container,
+    .testimonial-section .container,
+    .footer-container,
+    .footer-bottom-container {
+        width: 90%;
+    }
+
+    .header-container {
+        padding: 0 10px;
+    }
+
+    .nav-list {
+        gap: 18px;
+    }
+
+    .header-right {
+        gap: 20px;
+    }
+
+    /* Hero */
+    .hero-container {
+        grid-template-columns: minmax(220px, 0.9fr) minmax(300px, 1.1fr);
+        column-gap: 24px;
+    }
+
+    .hero-title {
+        font-size: clamp(34px, 4vw, 46px);
+    }
+
+    .hero-media {
+        height: 300px;
+    }
+
+    .revenue-card {
+        left: -15px;
+    }
+
+    /* Dream living */
+    .dream-living-container {
+        column-gap: 25px;
+    }
+
+    .dream-living-content {
+        margin-left: 15px;
+    }
+
+    .dream-living-content h2 {
+        width: 100%;
+        font-size: 34px;
+    }
+
+    .dream-living-content .section-desc {
+        width: 100%;
+    }
+
+    /* About */
+    .about-container {
+        grid-template-columns: minmax(250px, 0.95fr) minmax(300px, 1.05fr);
+        column-gap: 24px;
+        height: 460px;
+    }
+
+    .about-content {
+        height: 460px;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .about-content .section-desc,
+    .about-content .checklist li {
+        font-size: 14px;
+    }
+
+    .about-gallery {
+        height: 460px;
+    }
+
+    .about-content .tab-btn {
+        width: 76px;
+        height: 42px;
+        padding: 8px 8px 6px;
+        font-size: 10px;
+    }
+
+    .about-content .tab-pagination {
+        gap: 6px;
+    }
+
+    /* Services */
+    .services-section {
+        width: 90%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 22px;
+    }
+
+    /* Featured properties */
+    .featured-section {
+        padding: 70px 0;
+    }
+
+    .featured-top {
+        gap: 25px;
+    }
+
+    .featured-top h2 {
+        font-size: 34px;
+    }
+
+    .property-tabs {
+        gap: 20px;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .property-card {
+        height: 390px;
+    }
+
+    /* Projects and blog */
+    .projects-grid,
+    .blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    /* Contact */
+    .contact-container {
+        gap: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 40px;
+    }
+
+    .map-group {
+        height: 240px;
+    }
+
+    .map-front {
+        width: 72%;
+        height: 190px;
+    }
+
+    /* Testimonial */
+    .testimonial-card {
+        max-width: 650px;
+        gap: 30px;
+    }
+
+    .user-avatar {
+        flex-basis: 190px;
+        height: 280px;
+    }
+
+    .testimonial-arrow-prev {
+        left: -25px;
+    }
+
+    .testimonial-arrow-next {
+        right: -25px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 35px 25px;
+    }
+
+}
+
+.menu-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Menu hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: #071c1f;
+    cursor: pointer;
+    user-select: none;
+}
+/* =========================================================
+   MOBILE: max-width 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 75px;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+        height: auto;
+        padding: 10px 0;
+        background: #ffffff;
+        border-bottom: 1px solid #e8ecec;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+    .header-container {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .header-right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: auto;
+        flex: 0 0 auto;
+    }
+
+    .header-right .btn-primary {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        width: 220px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border: 1px solid #dfe6e7;
+        border-radius: 10px;
+        background: #fff;
+        font-size: 28px;
+        line-height: 1;
+        color: #071c1f;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        z-index: 2;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 21px;
+        height: 2px;
+        border-radius: 2px;
+        background: #071c1f;
+    }
+
+    .menu-checkbox:checked + .menu-toggle + .navbar {
+        display: block;
+    }
+
+    /* Common section spacing */
+    .hero-section,
+    .dream-living-space,
+    .featured-section,
+    .contact-section,
+    .testimonial-section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    /* Hero */
+    .hero-container {
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-title {
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .hero-desc {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .hero-media {
+        width: 100%;
+        height: 240px;
+    }
+
+    .revenue-card {
+        left: 15px;
+        bottom: -20px;
+        width: 135px;
+        min-height: 100px;
+        padding: 12px;
+    }
+
+    .btn-play {
+        right: 0;
+        bottom: 0;
+        width: 100px;
+    }
+
+    /* House tabs */
+    .house-tabs {
+        width: 100%;
+        height: 105px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 5px;
+    }
+
+    .house {
+        width: 72px;
+        flex-basis: 72px;
+        height: 54px;
+        flex-shrink: 0;
+    }
+
+    #house1:checked + .house-1,
+    #house2:checked + .house-2,
+    #house3:checked + .house-3 {
+        width: 96px;
+        flex-basis: 96px;
+        height: 68px;
+    }
+
+    .house span {
+        top: 6px;
+        left: 6px;
+        font-size: 9px;
+    }
+
+    .house-pagination {
+        gap: 8px;
+        margin-left: 8px;
+        flex-shrink: 0;
+    }
+
+    .pagination-line {
+        width: 18px;
+    }
+
+    .page-number {
+        font-size: 10px;
+    }
+
+    #house1:checked ~ .house-pagination .number-1,
+    #house2:checked ~ .house-pagination .number-2,
+    #house3:checked ~ .house-pagination .number-3 {
+        font-size: 18px;
+    }
+
+    /* Commercial real estate */
+    .Commercial-Real-estate {
+        padding: 40px 16px;
+    }
+
+    .Commercial-Real-estate .container {
+        width: 100%;
+    }
+
+    .section-header-text-center {
+        margin-bottom: 28px;
+    }
+
+    .section-header-text-center h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .section-header-text-center p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .guides-grid {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .guide-card {
+        padding: 24px 18px;
+    }
+
+    .guide-card h3 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .guide-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Dream living */
+    .dream-living-space {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .dream-living-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+    }
+
+    .dream-living-media {
+        width: min(100%, 430px);
+        min-height: 350px;
+        margin: 0 auto;
+        padding-left: 35px;
+        padding-bottom: 35px;
+    }
+
+    .dream-living-media .img-main-link {
+        right: 25px;
+        width: calc(100% - 35px);
+        height: 350px;
+    }
+
+    .dream-living-media .img-main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dream-living-media .img-sub-link {
+        width: 58%;
+        height: 220px;
+    }
+
+    .dream-living-media .badge-rating {
+        right: 0;
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .dream-living-content {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .dream-living-content h2 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .dream-living-content .section-desc {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .feature-item {
+        width: 100%;
+        padding: 11px 4px;
+    }
+
+    /* About */
+    .about-section {
+        padding: 0 16px 55px;
+    }
+
+    .about-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .about-content .sub-title {
+        font-size: 16px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 14px;
+    }
+
+    .about-content .section-desc {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 22px;
+    }
+
+    .about-content .checklist {
+        margin-bottom: 28px;
+        gap: 12px;
+    }
+
+    .about-content .checklist li {
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .about-content .checklist .square-icon {
+        width: 10px;
+        height: 10px;
+        margin-top: 6px;
+    }
+
+    .about-content .house-tabs {
+        min-height: 80px;
+        height: auto;
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    .about-content .tabs-buttons {
+        max-width: 70%;
+        overflow-x: auto;
+        align-items: flex-end;
+    }
+
+    .about-content .tab-btn {
+        width: 65px;
+        height: 42px;
+        padding: 8px 6px 5px;
+        font-size: 9px;
+        flex-shrink: 0;
+    }
+
+    #house1-radio:checked ~ .about-container .tab-1,
+    #house2-radio:checked ~ .about-container .tab-2,
+    #house3-radio:checked ~ .about-container .tab-3 {
+        width: 82px;
+        height: 65px;
+    }
+
+    .about-content .tab-pagination {
+        gap: 6px;
+        padding-bottom: 0;
+    }
+
+    .about-content .progress-bar {
+        width: 30px;
+        margin-bottom: 5px;
+    }
+
+    .about-content .page-num {
+        font-size: 12px;
+    }
+
+    #house1-radio:checked ~ .about-container .num-1,
+    #house2-radio:checked ~ .about-container .num-2,
+    #house3-radio:checked ~ .about-container .num-3 {
+        font-size: 18px;
+    }
+
+    .about-gallery {
+        width: 100%;
+        height: 330px;
+    }
+
+    .gallery-group {
+        grid-template-columns: 1.15fr 1fr;
+        gap: 10px;
+    }
+
+    .about-gallery .gallery-small-group {
+        gap: 10px;
+    }
+
+    .about-gallery .gallery-large img,
+    .about-gallery .gallery-small img {
+        border-radius: 6px;
+    }
+
+    /* Services */
+    .services-section {
+        width: 100%;
+        padding: 55px 16px;
+    }
+
+    .services-section .section-header {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .services-section .section-header h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .services-section .section-header p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 28px 20px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    /* Featured property */
+    .featured-section .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .featured-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .featured-top h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .featured-top p {
+        max-width: 290px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .property-tabs {
+        display: flex;
+        align-self: stretch;
+        justify-content: flex-start;
+        gap: 25px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .property-tabs .tab-btn {
+        flex: 0 0 auto;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .property-card {
+        width: 100%;
+        height: 360px;
+    }
+
+    .property-info {
+        width: 85%;
+        padding: 16px;
+    }
+
+    .property-info h4 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .property-info p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .price-row .price {
+        font-size: 16px;
+    }
+
+    .btn-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .btn-outline {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    /* Projects */
+    .projects-section {
+        width: 100%;
+        padding: 55px 16px 0;
+    }
+
+    .projects-section h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 45px;
+    }
+
+    .project-card {
+        height: 230px;
+    }
+
+    /* Blog */
+    .blog-section {
+        width: 100%;
+        padding: 55px 16px 65px;
+    }
+
+    .blog-section h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .blog-section .section-header {
+        margin-bottom: 30px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .blog-card img {
+        height: 210px;
+    }
+
+    .blog-body {
+        padding: 20px 16px;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 55px 16px 65px;
+    }
+
+    .contact-section .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-section h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+        line-height: 1.7;
+        padding-bottom: 18px;
+    }
+
+    .contact-info .checklist li,
+    .contact-section .checklist li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .map-group {
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .map-back {
+        width: 56%;
+        height: 145px;
+    }
+
+    .map-front {
+        width: 72%;
+        height: 170px;
+        right: 0;
+    }
+
+    .contact-form-box {
+        padding: 24px 18px;
+    }
+
+    .contact-form-box h3 {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .contact-form-box .btn-primary {
+        display: inline-flex;
+        width: auto;
+        min-width: 120px;
+        justify-content: center;
+    }
+
+    /* Testimonial */
+    .testimonial-section {
+        padding: 55px 16px;
+    }
+
+    .testimonial-section .container {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        max-width: 100%;
+        min-height: 0;
+        padding: 0 25px;
+    }
+
+    .user-avatar {
+        flex: 0 0 auto;
+        width: 180px;
+        height: 240px;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-content p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .testimonial-content .stars {
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-arrow {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .testimonial-arrow img {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .testimonial-arrow-next img {
+        width: 55px !important;
+        height: 56px !important;
+    }
+
+    .testimonial-arrow-prev {
+        left: -2px;
+    }
+
+    .testimonial-arrow-next {
+        right: -2px;
+    }
+
+    /* Banner */
+    .banner-bg {
+        height: 300px;
+        padding: 16px;
+    }
+
+    .banner-card {
+        width: min(100%, 420px);
+        min-width: 0;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .banner-thumb,
+    .thumb-wrapper {
+        width: 80px;
+        height: 70px;
+    }
+
+    .banner-info h3 {
+        font-size: 24px;
+    }
+
+    .banner-info .address,
+    .spec-icons {
+        font-size: 11px;
+    }
+
+    .unit-badge {
+        left: 50%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .unit-badge img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 0 16px 35px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .brand-col {
+        grid-column: 1 / -1;
+    }
+
+    .brand-col p {
+        max-width: 300px;
+    }
+
+    .footer-bottom {
+        padding: 20px 0 25px;
+    }
+
+    .footer-bottom-container {
+        width: 100%;
+        padding: 0 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE: max-width 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-media {
+        height: 210px;
+    }
+
+    .revenue-card {
+        left: 8px;
+        bottom: -18px;
+        width: 125px;
+        padding: 10px;
+    }
+
+    .revenue-card h3 {
+        font-size: 14px;
+    }
+
+    .revenue-card p {
+        font-size: 9px;
+    }
+
+    .btn-play {
+        width: 88px;
+        height: 38px;
+        font-size: 10px;
+    }
+
+    .dream-living-media {
+        min-height: 300px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+
+    .dream-living-media .img-main-link {
+        right: 10px;
+        height: 300px;
+        width: calc(100% - 25px);
+    }
+
+    .dream-living-media .img-sub-link {
+        height: 185px;
+    }
+
+    .about-content h2,
+    .featured-top h2,
+    .projects-section h2,
+    .blog-section h2,
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .about-gallery {
+        height: 260px;
+    }
+
+    .about-content .house-tabs {
+        gap: 5px;
+    }
+
+    .about-content .tabs-buttons {
+        max-width: 65%;
+    }
+
+    .about-content .tab-btn {
+        width: 58px;
+        font-size: 8px;
+    }
+
+    #house1-radio:checked ~ .about-container .tab-1,
+    #house2-radio:checked ~ .about-container .tab-2,
+    #house3-radio:checked ~ .about-container .tab-3 {
+        width: 70px;
+        height: 58px;
+    }
+
+    .about-content .tab-pagination {
+        gap: 4px;
+    }
+
+    .about-content .progress-bar {
+        width: 22px;
+    }
+
+    .about-content .page-num {
+        font-size: 11px;
+    }
+
+    #house1-radio:checked ~ .about-container .num-1,
+    #house2-radio:checked ~ .about-container .num-2,
+    #house3-radio:checked ~ .about-container .num-3 {
+        font-size: 16px;
+    }
+
+    .property-card {
+        height: 330px;
+    }
+
+    .property-info {
+        width: 88%;
+        padding: 14px;
+    }
+
+    .property-info h4 {
+        font-size: 15px;
+    }
+
+    .property-info p {
+        font-size: 11px;
+    }
+
+    .price-row .price {
+        font-size: 15px;
+    }
+
+    .banner-card {
+        align-items: flex-start;
+    }
+
+    .banner-info h3 {
+        font-size: 20px;
+    }
+
+    .banner-thumb,
+    .thumb-wrapper {
+        width: 65px;
+        height: 60px;
+    }
+
+    .spec-icons {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-col,
+    .footer-col {
+        grid-column: auto;
+    }
+
+    .newsletter-form {
+        gap: 6px;
+        padding-left: 12px;
+    }
+
+    .newsletter-form .btn-primary {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+}

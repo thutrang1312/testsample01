@@ -1,0 +1,2174 @@
+.header {
+    width: 100%;
+    height: 91px;
+    background: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 91px;
+}
+
+.topbar {
+    height: 36px;
+    background: #061d20;
+    color: #fff;
+    font-size: 11px;
+}
+
+.topbar-container {
+    width: 78%;
+    max-width: 1100px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar-contact,
+.topbar-social {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.topbar-contact span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.topbar-contact img {
+    width: 17px;
+    height: 17px;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.topbar-social a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-container {
+    width: 78%;
+    max-width: 1100px;
+    height: 55px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    min-width: 0;
+}
+
+.logo img {
+    width: 92px;
+    display: block;
+}
+
+.navbar {
+    flex: 1;
+    min-width: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #071c1f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    color: #ff5a3c;
+}
+
+.btn-primary {
+    width: 75px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ff5a3c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hero-section {
+    background: #f2f7f8;
+    min-height: 420px;
+    padding: 45px 0 55px;
+}
+
+.hero-container {
+    width: 78%;
+    max-width: 1100px;
+    min-height: 320px;
+    margin: 0 auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(300px, 1.2fr);
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 0px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    max-width: 500px;
+    margin: 0 0 18px;
+    color: #061d20;
+    font-size: clamp(32px, 3.5vw, 52px);
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.hero-desc {
+    max-width: 280px;
+    margin: 0 0 24px;
+    color: #9aa9ad;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.hero-content .btn-primary {
+    width: 120px;
+    height: 42px;
+}
+
+.hero-media {
+    position: relative;
+    min-width: 0;
+    height: 320px;
+}
+
+.hero-img-placeholder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #c6c6c6;
+}
+
+.hero-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.revenue-card {
+    position: absolute;
+    left: -28px;
+    bottom: -22px;
+    width: 138px;
+    min-height: 108px;
+    padding: 14px 16px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(6, 29, 32, 0.12);
+}
+
+.revenue-card .icon-up {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+.revenue-card h3 {
+    margin: 0 0 5px;
+    color: #061d20;
+    font-size: 16px;
+}
+
+.revenue-card p {
+    margin: 0;
+    color: #9aa9ad;
+    font-size: 10px;
+}
+
+.btn-play {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 114px;
+    height: 42px;
+    border: 0;
+    background: #ff5a3c;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.house-tabs {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 162px;
+}
+
+.house-tabs input {
+    display: none;
+}
+
+.house {
+    position: relative;
+    width: 88px;
+    height: 60px;
+    flex: 0 0 80px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    background: #a5a5a5;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.15;
+
+    cursor: pointer;
+    transition: height 0.2s ease, transform 0.2s ease;
+}
+
+.house img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.house span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    color: #fff;
+    font-size: 13px;
+    z-index: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#house1:checked + .house-1,
+#house2:checked + .house-2,
+#house3:checked + .house-3 {
+    height: 80px;
+    width: 114px;
+    flex-basis: 114px;
+}
+
+.house-pagination {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 18px;
+}
+
+.pagination-line {
+    width: 30px;
+    height: 3px;
+    background: #e5e5e5;
+    border-radius: 2px;
+}
+
+#house1:checked ~ .house-pagination .line-1,
+#house2:checked ~ .house-pagination .line-2,
+#house3:checked ~ .house-pagination .line-3 {
+    background: #071c1f;
+    height: 4px;
+}
+
+.page-number {
+    font-size: 13px;
+    color: #71849a;
+}
+
+#house1:checked ~ .house-pagination .number-1,
+#house2:checked ~ .house-pagination .number-2,
+#house3:checked ~ .house-pagination .number-3 {
+    color: #071c1f;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#house1:checked ~ .house-pagination .number-1,
+#house2:checked ~ .house-pagination .number-2,
+#house3:checked ~ .house-pagination .number-3 {
+    color: #071c1f;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.Commercial-Real-estate {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.Commercial-Real-estate .container {
+    width: 78%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+.guides-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.guide-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #F5F5F5; 
+  transition: all 0.3s ease;
+}
+
+.guide-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: -0.005em; 
+  text-align: center;
+}
+
+
+.guide-card p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.01em; 
+  text-align: center;
+}
+
+.guide-card p.text-buyer,
+.guide-card p.text-seller   {
+  color: #899AA2; 
+}
+
+.guide-card.active p.text-renter {
+  color: #FFFFFF;
+}
+
+
+.guide-card.active {
+  background-color: #FF5A3C;
+  color: #ffffff;
+}
+
+.guide-card.active h3,
+.guide-card.active p {
+  color: #ffffff;
+}
+
+.section-header-text-center {
+  max-width: 567px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-header-text-center h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: -0.015em; 
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section-header-text-center p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-style: regular; 
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em; 
+  text-align: center;
+  color:#9EABB2;
+;
+}
+
+
+/* section about  */
+
+.dream-living-space {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.dream-living-container {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 78%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+
+
+.dream-living-media {
+    position: relative;
+    width: min(430px, 100%);
+    min-height: 380px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    justify-self: center;
+}
+
+.image-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+.dream-living-content {
+  margin-left: 60px; /* Tăng/giảm số này để đẩy cột chữ sang phải nhiều hay ít */
+}
+
+.dream-living-content h2 {
+    width: 340px;
+    max-width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0;
+    color: #0d0e10; /* Màu chữ đen đậm chuẩn giao diện */
+    margin: 0 0 18px;
+}
+
+.dream-living-content .section-desc {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 0 26px;
+    color: #9aa9ad;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.feature-list {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 280px;
+    max-width: 100%;
+    padding: 11px 8px;
+}
+
+.feature-item > img {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+}
+
+.feature-item h4 {
+    margin: 0 0 6px;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #071C1F;
+    line-height: 1.2;
+}
+
+.feature-item p {
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    color: #899AA2;
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+.feature-item:nth-child(2) {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(6, 29, 32, 0.04);
+
+}
+
+.dream-living-media .img-main-link {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: min(250px, calc(100% - 40px));
+    height: 380px;
+    display: block;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dream-living-media .img-main-link .img-main,
+.dream-living-media .img-sub-link .img-sub {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dream-living-media .img-main-link .img-main {
+    border-radius: 12px;
+}
+
+.dream-living-media .img-sub-link {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    width: min(220px, calc(100% - 10px));
+        height: 340px;
+        border-radius: 12px;
+        border: 6px solid #ffffff;
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+}
+
+    .dream-living-media .img-sub-link .img-sub {
+        border-radius: 6px;
+}
+
+    .dream-living-media .img-main-link:focus-visible,
+    .dream-living-media .img-sub-link:focus-visible {
+    outline: 3px solid #ff5a3c;
+    outline-offset: 4px;
+}
+
+    #show-main-image:checked ~ .img-main-link {
+        z-index: 3;
+}
+
+    #show-sub-image:checked ~ .img-sub-link {
+        z-index: 3;
+    }
+
+    #show-main-image:checked ~ .img-sub-link {
+        z-index: 1;
+}
+
+.dream-living-media .badge-rating {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 10px;
+    right: -20px;
+    z-index: 3;
+}
+
+
+.dream-living-media .badge-rating ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.dream-living-media .badge-rating ul span {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+/* Layout chung của Section About */
+.about-container {
+  width: 78%;
+  max-width: 1100px;
+  height: 520px;
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  align-items: stretch; /* Ép 2 cột bằng chiều cao tuyệt đối */
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 0px;
+}
+
+/* Khung nội dung bên trái */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Đẩy phần chữ lên mép trên, tabs xuống mép dưới */
+  height: 520px;
+  min-height: 0;
+}
+
+/* Sub-title kèm icon */
+.about-content .sub-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.about-content .sub-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1; /* Căn phẳng tuyệt đối với mép trên hình ảnh */
+  letter-spacing: -0.015em;
+  color: #111827;
+}
+
+/* Tiêu đề & Mô tả */
+.about-content h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  color: #0d0e10;
+}
+
+.about-content .section-desc {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #899AA2;
+  margin: 0 0 28px;
+}
+
+/* Danh sách Checklist */
+.about-content .checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #899AA2;
+}
+
+.about-content .checklist li {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Ô vuông màu cam */
+.about-content .checklist .square-icon {
+  width: 12px;
+  height: 12px;
+  background-color: #ff523b;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ================= TABS BẬC THANG & PAGINATION ================= */
+
+.about-content .house-tabs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 75px;
+  gap: 12px;
+  margin-top: auto; /* Luôn ép cụm Tab dính sát mép dưới cùng */
+}
+
+.about-content .tabs-buttons {
+  display: flex;
+  align-items: flex-end;
+  flex: 0 0 auto;
+}
+
+/* Nút tab bậc thang dạng label */
+.about-content .tab-btn {
+  display: inline-block;
+  background-color: #a0a0a0;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 10px 14px 6px 12px;
+  cursor: pointer;
+  user-select: none;
+  height: 45px;
+  width: 90px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Thanh Pagination */
+.about-content .tab-pagination {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-left: auto;
+  flex: 0 0 auto;
+  color: #9ca3af;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+
+.about-content .progress-bar {
+  width: 45px;
+  height: 2px;
+  background-color: #d1d5db;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.about-content .line-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 33.33%;
+  background-color: #ff523b;
+  transition: all 0.3s ease;
+}
+
+.about-content .page-num {
+  font-family: 'Nunito', sans-serif;
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+/* ================= GALLERY BÊN PHẢI ================= */
+
+.about-gallery {
+  width: 100%;
+  height: 520px;
+  align-self: start;
+  overflow: hidden;
+}
+
+/* Mặc định ẩn tất cả bộ ảnh */
+.gallery-group {
+  display: none;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 16px;
+  height: 100%;
+}
+
+.about-gallery .gallery-large img,
+.about-gallery .gallery-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-gallery .gallery-small-group {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ================= BỘ ĐIỀU KHIỂN TƯƠNG TÁC (RADIO HACK) ================= */
+
+/* 1. Đổi bộ ảnh hiển thị khi chọn Tab */
+#house1-radio:checked ~ .about-container .group-1,
+#house2-radio:checked ~ .about-container .group-2,
+#house3-radio:checked ~ .about-container .group-3 {
+  display: grid;
+}
+
+/* 2. Đổi màu xám đậm và kích thước nhô cao cho Tab active */
+#house1-radio:checked ~ .about-container .tab-1,
+#house2-radio:checked ~ .about-container .tab-2,
+#house3-radio:checked ~ .about-container .tab-3 {
+  height: 75px;
+  width: 110px;
+  background-color: #6b7280;
+}
+
+/* 3. Phóng to và làm đậm số trang tương ứng */
+#house1-radio:checked ~ .about-container .num-1,
+#house2-radio:checked ~ .about-container .num-2,
+#house3-radio:checked ~ .about-container .num-3 {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* 4. Điều hướng vạch đỏ pagination */
+#house1-radio:checked ~ .about-container .line-active { left: 0%; }
+#house2-radio:checked ~ .about-container .line-active { left: 33.33%; }
+#house3-radio:checked ~ .about-container .line-active { left: 66.66%; }
+
+
+/* ================= 5. SERVICES SECTION ================= */
+
+.services-section {
+    padding: 80px 0;
+    background-color: #f2f7f8;
+    width: 78%;
+    max-width: 1100px;
+    min-height: 320px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    isolation: isolate;
+
+    display: grid;
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 0px;
+     /* Nền xám nhạt làm nổi bật các card trắng */
+}
+
+.services-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background-color: #f2f7f8;
+}
+
+/* Header tiêu đề căn giữa */
+.services-section .section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.services-section .section-header h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+}
+
+.services-section .section-header p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    width: 80%;
+    font-size: 16px;
+    padding-top: 12px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #655F73;
+    margin: 0 auto;
+
+}
+
+/* Lưới Grid 3 cột x 2 hàng */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card dịch vụ */
+.service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Đổ bóng nhẹ nhàng chuẩn Figma */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Ô vuông chứa icon phía trên */
+.service-card img {
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+    background-color: #fff5f2; /* Nền màu hồng/cam nhạt cho icon */
+    border-radius: 16px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+/* Tiêu đề card */
+.service-card h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+/* Mô tả card */
+.service-card p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #899aa2;
+    margin-bottom: 24px;
+    max-width: 260px;
+}
+
+/* Link Learn more */
+.service-card .link-more {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0d0e10;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.service-card .link-more:hover {
+    color: #ff523b;
+    gap: 10px; /* Hiệu ứng đẩy mũi tên khi hover */
+    width: 78%;
+    max-width: 1100px;
+}
+
+
+/* ================= 6. FEATURED PROPERTY SECTION ================= */
+
+.featured-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.featured-section .container {
+  width: 78%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header & Tabs lọc nằm cùng 1 hàng */
+.featured-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.featured-top h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #0d0e10;
+  margin-bottom: 8px;
+}
+
+.featured-top p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #899aa2;
+  margin: 0;
+}
+
+/* Tabs lọc bất động sản */
+/* ================= TÙY CHỈNH TƯƠNG TÁC TABS (RADIO HACK) ================= */
+
+/* 1. Mặc định ẩn tất cả danh sách grid */
+.property-grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* 2. Cập nhật thuộc tính nút tab cho thẻ <label> */
+.property-tabs .tab-btn {
+  background: none;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: #899aa2;
+  padding: 0 0 8px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  user-select: none;
+  display: inline-block;
+}
+
+/* XÓA hoặc THAY THẾ đoạn `.property-tabs .tab-btn.active` cũ bằng đoạn dưới đây: */
+
+/* 3. Hiện Grid tương ứng khi Radio checked */
+#tab-appartment:checked ~ .container .grid-appartment,
+#tab-vila:checked ~ .container .grid-vila,
+#tab-land:checked ~ .container .grid-land {
+  display: grid;
+}
+
+/* 4. Đổi màu chữ tối hơn cho Tab được chọn */
+#tab-appartment:checked ~ .container .tab-app,
+#tab-vila:checked ~ .container .tab-vi,
+#tab-land:checked ~ .container .tab-la {
+  color: #0d0e10;
+}
+
+/* 5. Hiện vạch gạch chân màu cam cho Tab được chọn */
+#tab-appartment:checked ~ .container .tab-app::after,
+#tab-vila:checked ~ .container .tab-vi::after,
+#tab-land:checked ~ .container .tab-la::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff523b;
+}
+
+.property-tabs .tab-btn.active {
+  color: #899aa2;
+}
+
+/* Vạch gạch chân màu cam dưới Tab Active */
+.property-tabs .tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff523b;
+}
+
+/* Grid 3 cột cho Bất động sản */
+.property-grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Card Bất động sản */
+.property-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 420px;
+}
+
+.property-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Khung thông tin đè ở góc dưới bên trái */
+.property-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 82%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.property-info h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0e10;
+  margin-bottom: 6px;
+}
+
+.property-info p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  color: #899aa2;
+  margin-bottom: 16px;
+}
+
+/* Hàng chứa giá tiền và nút mũi tên */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-row .price {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0d0e10;
+}
+
+/* Nút mũi tên vuông */
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #e5e7eb;
+  color: #111827;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Card 1 Active (Nổi bật màu cam như hình mẫu) */
+.property-card:first-child .price-row .price {
+  color: #ff523b;
+}
+
+.property-card:first-child .btn-arrow {
+  background-color: #ff523b;
+  color: #ffffff;
+}
+
+/* Nút Explore Property căn giữa */
+.mt-30 {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #ff523b;
+  color: #ff523b;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #ff523b;
+  color: #ffffff;
+}
+
+.testimonial-section {
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
+.testimonial-section .container {
+  width: 78%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-section h2 {
+  margin-bottom: 12px;
+  color: #0d0e10;
+}
+
+.testimonial-section > .container > p {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  color: #899aa2;
+  line-height: 1.6;
+}
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 700px;
+  min-height: 273px;
+  margin: 0 auto;
+}
+
+.user-avatar {
+  position: relative;
+  flex: 0 0 230px;
+  height: 330px;
+  overflow: visible;
+  border-radius: 12px;
+  background: transparent;
+}
+
+.user-avatar::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  border-radius: 20px;
+  background: #ff523b;
+}
+
+.user-avatar img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  
+  /* Bo góc lệch đặc trưng theo thiết kế mẫu */
+  border-radius: 20px 20px 20px 20px; 
+  object-fit: cover;
+  display: block;
+  
+  /* Đẩy ảnh lệch lên trên 18px và sang phải 18px */
+  transform: translate(18px, -18px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.testimonial-content {
+  text-align: left;
+  flex: 1;
+}
+
+/* Reset sạch sẽ khung nút bấm */
+/* Khung ngoài của cả 2 nút - Ép cố định 44px x 44px */
+.testimonial-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 44px !important;
+  height: 44px !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Icon SVG bên trong - Cố định cùng 1 kích thước cho cả 2 bên */
+.testimonial-arrow img {
+  width: 44px !important;
+  height: 44px !important;
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+  display: block;
+}
+
+/* Định vị khoảng cách 2 bên */
+.testimonial-arrow-prev {
+  left: -60px;
+}
+
+.testimonial-arrow-next {
+  right: -60px;
+}
+
+/* SVG mũi tên phải có viewBox lớn hơn và chứa vùng shadow bên dưới. */
+.testimonial-arrow-next img {
+  width: 86px !important;
+  height: 88px !important;
+  max-width: none;
+  max-height: none;
+  transform: translateY(0);
+}
+
+
+.quote-mark {
+  display: block;
+  margin-bottom: 8px;
+  color: #ff9d91;
+  font: 700 42px/0.8 Georgia, serif;
+}
+
+.testimonial-content p {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+  font-size: 14px;
+    color: #071C1F;
+  line-height: 1.9;
+  letter-spacing: 0;
+
+}
+
+.testimonial-content .stars {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: #ffb800;
+  letter-spacing: 2px;
+}
+
+.testimonial-content h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #071C1F;
+
+}
+
+.testimonial-content .role {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #6D7781;
+}
+
+    
+/* bannar */
+
+/* ================= BANNER SECTION ($4,000) ================= */
+
+.property-banner-section {
+  position: relative;
+  width: 100%;
+}
+
+/* Nền banner màu xám full-width */
+.banner-bg {
+  width: 100%;
+  height: 340px;
+  background-color: #C4C4C4; /* Màu nền xám mẫu (hoặc thay bằng ảnh background) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Card trắng thông tin ở chính giữa banner */
+.banner-card {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  min-width: 280px;
+}
+
+.banner-thumb {
+  width: 90px;
+  height: 75px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.banner-info h3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.015em;
+
+}
+
+.banner-info .address {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 3px 0 2px 0;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color:#6D7781;
+}
+
+.spec-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.spec-icons span {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  line-height: 1;
+  gap: 6px;
+  letter-spacing: -0.01em;
+  white-space: nowrap; /* Ngăn không cho nội dung xuống dòng */
+  color: #6D7781;
+}
+
+/* Badge màu cam UNIT NO. 9A nằm đè giữa 2 section */
+.unit-badge {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 90px;
+  height: 90px;
+  background: transparent; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.unit-badge img {
+  width: 90px;          /* Tùy chỉnh kích thước icon vừa mắt */
+  height: 90px;
+  object-fit: contain;
+  display: block;
+}
+.testimonial-section {
+  padding-top: 100px !important;
+}
+
+.thumb-wrapper {
+  position: relative;
+  width: 105px;
+  height: 85px;
+  flex-shrink: 0;
+}
+
+/* Ảnh nền thumb */
+.banner-thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Icon đè lên góc dưới bên trái của ảnh */
+.badge-icon {
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: #ff523b; /* Nền màu cam cho icon */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.badge-icon img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  /* Nếu icon SVG màu tối, dùng filter này để chuyển icon sang màu trắng */
+  filter: brightness(0) invert(1); 
+}
+
+
+/* ================= 9. PROJECTS & NEWSLETTER SECTION ================= */
+
+.projects-section {
+  width: 78%;
+  padding: 80px 0 0 0;
+  max-width: 1100px; /* Thêm max-width để giữ chuẩn khung container toàn trang */
+  margin: 0 auto
+}
+
+.projects-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  width: 100%;
+  color: #0d0e10;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+
+/* --- GRID PROJECTS --- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.project-card {
+  height: 240px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  /* Lớp phủ tối mờ để làm nổi bật chữ trắng */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2), 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+/* Nút See More trắng chữ cam */
+.project-card .btn-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 24px;
+  background-color: #ffffff;
+  color: #ff523b;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card .btn-sm:hover {
+  background-color: #fff5f3;
+  transform: scale(1.03);
+}
+
+/* --- FORM NEWSLETTER --- */
+
+.newsletter-box {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f7f8f9;
+  padding: 6px 6px 6px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #0d0e10;
+  padding: 10px 0;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #b0bac0;
+}
+
+.newsletter-form .btn-primary {
+  padding: 12px 32px;
+  background-color: #ff523b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-form .btn-primary:hover {
+  background-color: #e0442e;
+}
+
+/* ================= 9. BLOG SECTION ================= */
+
+.blog-section {
+  width: 78%;
+  background-color: #ffffff;
+  padding: 80px 0 100px;
+  margin: 0 auto;
+}
+
+.blog-section .section-header {
+  margin-bottom: 50px;
+}
+
+.blog-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0d0e10;
+  margin-bottom: 12px;
+}
+
+.blog-section .section-header p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #899aa2;
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* --- GRID 3 CỘT BLOG --- */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Card 1 Nổi bật (Box-shadow đổ bóng dịu như mẫu Figma) */
+.blog-card:first-child {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Khung nội dung bài viết */
+.blog-body {
+  padding: 24px 20px 20px;
+}
+
+.blog-body h3 {
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  font-style: SemiBold;
+  font-size: 18px;
+  color: #242424;
+  line-height: 100%;
+  letter-spacing: 0em;
+
+}
+
+/* Nhãn Category (Rentals có icon Bookmark) */
+.blog-body .category {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 200;
+  color: #FF5A3C;
+  margin-bottom: 14px;
+}
+
+.blog-body .category img {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px;
+  max-height: 14px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0; /* Cho phép icon giữ nguyên kích thước, không bị Flexbox co giãn */
+}
+
+.blog-body p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  color: #899aa2;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Thông tin ngày tháng & Tác giả */
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #899aa2;
+}
+
+.blog-meta img {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px;
+  max-height: 14px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0; /* Cho phép icon giữ nguyên kích thước, không bị Flexbox co giãn */
+}
+
+.blog-meta .author-name {
+  color: #ff523b;
+  font-weight: 600;
+}
+
+.blog-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Highlight màu cam cho tên tác giả */
+.blog-meta .author-name {
+  color: #ff523b;
+  font-weight: 300;
+}
+
+
+
+/* ================= 10. CONTACT SECTION ================= */
+
+.contact-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 0 100px;
+}
+
+.contact-section .container {
+  width: 78%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-section .sub-title {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF5A3C;
+  margin-bottom: 8px;
+}
+
+.contact-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1F242E;
+  margin-bottom: 50px;
+
+
+}
+
+/* Bố cục 2 cột (Trái: Info & Map, Phải: Form) */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* --- CỘT TRÁI: INFO & CHECKLIST --- */
+
+.contact-info p {
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  color: #8C8C8C;
+  line-height: 28px;
+  letter-spacing: 0%;
+  padding-bottom: 30px;
+
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.checklist li {
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color:#242424;
+  padding: 5px 0 0 0;
+}
+
+/* Khung chứa 2 hình ảnh xếp đè */
+.map-group {
+  position: relative;
+  width: 100%;
+  height: 280px; /* Độ cao khung để chứa 2 ảnh chéo nhau */
+  margin-top: 30px;
+}
+
+/* Ảnh phía sau (nhỏ hơn, nằm bên trái) */
+.map-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* Ảnh phía trước (lớn hơn, đè lên bên phải) */
+.map-front {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 70%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: -10px -10px 25px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ tạo độ nổi */
+}
+
+/* --- CỘT PHẢI: FORM LIÊN HỆ --- */
+
+.contact-form-box {
+  background-color: #f4f7f8; /* Nền xám nhạt chuẩn mẫu */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.contact-form-box h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0d0e10;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #899aa2;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #0d0e10;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #c4cdd2;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Nút Send màu cam */
+.contact-form-box .btn-primary {
+  padding: 12px 36px;
+  background-color: #ff523b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form-box .btn-primary:hover {
+  background-color: #e0442e;
+}
+
+/* ================= 11. FOOTER SECTION ================= */
+
+.footer {
+  background-color: #171b26; /* Màu nền xám đen tối chuẩn Figma */
+  color: #a0aaba;
+  padding: 80px 0 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.footer-container {
+  width: 78%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 0.8fr 1.4fr;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+/* --- CỘT BRAND --- */
+
+.brand-col .logo img {
+  height: 32px;
+  margin-bottom: 20px;
+}
+
+.brand-col p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #899aa2;
+  margin-bottom: 24px;
+  max-width: 220px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.social-links a:hover {
+  background-color: #e7dfde;
+  color: #ffffff;
+}
+
+/* --- CÁC CỘT MENU (Company, Contact, More) --- */
+
+.footer-col h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  font-size: 13px;
+  color: #899aa2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ff523b;
+}
+
+/* --- CỘT HEAD OFFICE & NEWSLETTER --- */
+
+.footer-col p {
+  font-size: 12px;
+  color: #899aa2;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.footer-newsletter {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer-newsletter input::placeholder {
+  color: #556070;
+}
+
+.footer-newsletter button {
+  background: transparent;
+  border: none;
+  color: #ff523b; /* Icon phong thư cam */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+/* --- FOOTER BOTTOM --- */
+
+.footer-bottom {
+  padding: 24px 0 30px;
+}
+
+.footer-bottom-container {
+  width: 78%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #616e7f;
+}
+
+.footer-bottom-container span:nth-child(1),
+.footer-bottom-container span:nth-child(2) {
+  display: inline-block;
+  padding-bottom: 6px; /* Khoảng cách giữa chữ và đường gạch chân */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25); /* Đường gạch chân dưới chữ */
+  color: #a0aaba;
+}
+
+
+/* Dải màu cam trang trí dưới cùng */
+.footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #ff523b;
+}
